@@ -1,0 +1,9 @@
+requests
+pyjwt
+cryptography
+selenium
+pyyaml
+
+# Optional (shelled out to, not imported):
+#   roadtx       -- device registration + PRT (Module 2/3)
+#   pytune       -- Intune enrollment / SyncML checkin (Module 8)

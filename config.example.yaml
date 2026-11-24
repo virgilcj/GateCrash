@@ -1,0 +1,27 @@
+# GateCrash config. Copy to config.yaml and fill in. Never commit real creds.
+# Password can also come from the AZCA_PASSWORD env var (preferred for special chars).
+
+tenant_id: "00000000-0000-0000-0000-000000000000"
+username: "user@domain.com"
+password: ""                       # or omit and export AZCA_PASSWORD
+sharepoint_host: ""                # derived from username domain if blank
+
+# Pre-existing device / PRT (from device-reg or roadtx). Needed for prt-flow / drs / intune.
+prt_path: ""                       # path to roadtx.prt ({refresh_token, session_key})
+session_key_path: ""               # optional: session key hex in a separate file
+device_id: ""
+transport_key_path: ""
+device_cert_path: ""
+
+# Selenium
+chromium_path: ""                  # e.g. /usr/bin/chromium  or  C:/Program Files/Google/Chrome/Application/chrome.exe
+headless: true
+
+# MFA
+mfa_timeout: 300
+mfa_number_file: "mfa_number.txt"
+
+# Output
+output_dir: "./output"
+engagement_name: "assessment_001"
+verbose: true

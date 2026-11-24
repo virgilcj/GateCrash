@@ -1,0 +1,33 @@
+# Credentials and config (config.example.yaml is the public template)
+config.yaml
+config_kali.yaml
+*.env
+
+# Engagement output (tokens, certs, evidence, reports)
+output/
+
+# Test artifacts
+mfa_number.txt
+bypass_run.log
+bypass_kali.log
+*.log
+
+# Certs and keys
+*.pfx
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Claude Code (dev instructions, local settings)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
