@@ -76,10 +76,13 @@ need no browser at all. Install Selenium + chromedriver only if you want the `se
 Copy `config.example.yaml` to `config.yaml` and fill in:
 
 ```yaml
-tenant_id: "contoso.onmicrosoft.com"   # or the GUID
+tenant_id: "contoso.onmicrosoft.com"   # or the GUID, or just the domain (e.g. "contoso.com")
 username: "user@contoso.com"
 password: "hunter2"                     # or export AZCA_PASSWORD for special chars
 ```
+
+`tenant_id` accepts three forms: the GUID (`50a8c6a5-...`), the onmicrosoft domain (`contoso.onmicrosoft.com`),
+or just the primary domain (`contoso.com`). Azure resolves all three to the same tenant.
 
 Passwords with `$`, `^`, `!` should use the env var (`export AZCA_PASSWORD='p@ss!'`) to avoid
 shell escaping issues.
